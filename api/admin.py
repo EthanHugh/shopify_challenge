@@ -7,7 +7,7 @@ from api import models
 
 admin.site.site_header = "Shopify Challenge Admin Page"
 admin.site.unregister(Group)
-admin.site.unregister(User)
+# admin.site.unregister(User)
 
 class InventoryAdmin(admin.ModelAdmin):
     list_display = ('inventory_name', 'inventory_id')
