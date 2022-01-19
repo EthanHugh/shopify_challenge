@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-71f9q9_!km1=ppd9fs_19(mhyeed80t^)uy$6&$nm@+j(@qlt6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ethanhughbackendchallenge.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -81,11 +81,14 @@ WSGI_APPLICATION = 'inventory.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE' : 'django.db.backends.postgresql',
+        'NAME' : 'ddff80jnfndlam',
+        'HOST' : 'ec2-54-172-219-6.compute-1.amazonaws.com',
+        'PORT' : 5432,
+        'USER' : 'lsnyiskjumubum',
+        'PASSWORD' : 'ee2b81a7e277c48730b77647e137cc647ef1941bb02e96d1749676f15f8647e0',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
